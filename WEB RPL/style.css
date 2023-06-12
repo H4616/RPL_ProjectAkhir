@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    background-color: #1f2b31 !important;
+    
+    
+}
+.global-container {
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.login-form {
+    width: 45%;
+    height: 85%;
+    padding: 4%;
+    background-color: #1a2226 !important;
+    border-radius: 2% !important;
+    color: #00ff00;
+}
+
+input[type="email"],
+input[type="password"]{
+    background:#1a2226;
+    color: rgb(0, 0, 0);
+    border: 2px solid #00ff00 ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus{
+    outline: none;
+    border: none;
+    background: #1a2226;
+    color: #fff;
+    margin: 0;
+}
+
+.hider-container{
+
+    height: 50%;
+    padding: 4%;
+    background-color: #07ce00 !important;
+    border-radius: 2% !important;
+    color: #06f02d;
+}
+
+.hidder-container{ 
+height: 100%;
+background: #ffffff !important; 
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 80px;
+    align-items: center;
+    grid-gap: 30px;
+}
+img{
+    object-fit: cover;
+}
+.grid > article{
+    box-shadow: 10px 5px 5px 0 #1a2226;
+    border-radius: 30px;
+    text-align: center;
+    background: #fff;
+    transition: transform;
+}
+.grid>article img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.konten{
+    cursor: progress;
+}
+.grid>article:hover{
+    transform: scale(1.2);
+}
